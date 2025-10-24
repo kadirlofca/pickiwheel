@@ -1,0 +1,38 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+:root {
+	--accent: hsl(270, 30%, 60%);
+	--accent-highlight: hsl(270, 40%, 30%);
+
+	--primary: hsl(270, 20%, 90%);
+	--primary-highlight: hsl(270, 0%, 100%);
+
+	--secondary: hsl(270, 40%, 30%);
+	--secondary-highlight: hsl(270, 60%, 10%);
+
+	--spacing-primary: 1.5rem;
+	--spacing-secondary: 0.3rem;
+}
+
+@theme {
+	--color-accent: var(--accent);
+	--color-accent-highlight: var(--accent-highlight);
+
+	--color-primary: var(--primary);
+	--color-primary-highlight: var(--primary-highlight);
+
+	--color-secondary: var(--secondary);
+	--color-secondary-highlight: var(--secondary-highlight);
+
+	--font-sans: var(--font-quicksand);
+
+	--spacing-primary: var(--spacing-primary);
+	--spacing-secondary: var(--spacing-secondary);
+}
+
+body {
+	background: var(--primary);
+	color: var(--secondary);
+	font-family: var(--font-sans);
+}
