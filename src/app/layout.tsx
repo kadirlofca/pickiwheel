@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 	description: "Portfolio of Social Media Marketer Jordin Hipps",
 };
 
-export default function RootLayout({
+export default function Layout({
 	children,
 }: Readonly<{
 	children: React.ReactNode;

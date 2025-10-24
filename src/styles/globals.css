@@ -32,7 +32,7 @@
 }
 
 body {
-	background: var(--primary);
+	background: var(--primary-highlight);
 	color: var(--secondary);
 	font-family: var(--font-sans);
 }
