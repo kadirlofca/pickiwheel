@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
-import { Quicksand } from "next/font/google";
+import { Nunito_Sans } from "next/font/google";
 import "../styles/globals.css";
 import Navbar from "@/components/Navbar";
 
-const quicksand = Quicksand({
+const nunitoSans = Nunito_Sans({
 	variable: "--font-sans",
 	subsets: ["latin"],
 });
@@ -20,7 +20,9 @@ export default function Layout({
 }>) {
 	return (
 		<html lang="en">
-			<body className={`prose prose-invert max-w-full antialiased ${quicksand.variable}`}>
+			<body
+				className={`prose prose-invert max-w-full antialiased ${nunitoSans.variable}`}
+			>
 				<Navbar />
 				<main>{children}</main>
 			</body>

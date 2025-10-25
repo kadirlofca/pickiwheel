@@ -2,7 +2,7 @@
 @plugin "@tailwindcss/typography";
 
 :root {
-	--accent: hsl(270, 30%, 60%);
+	--accent: hsl(270, 40%, 70%);
 	--accent-highlight: hsl(270, 40%, 30%);
 
 	--primary: hsl(270, 20%, 90%);
@@ -12,7 +12,7 @@
 	--secondary-highlight: hsl(270, 60%, 10%);
 
 	--spacing-primary: 1.5rem;
-	--spacing-secondary: 0.3rem;
+	--spacing-secondary: 0.9rem;
 }
 
 @theme {
@@ -25,14 +25,14 @@
 	--color-secondary: var(--secondary);
 	--color-secondary-highlight: var(--secondary-highlight);
 
-	--font-sans: var(--font-quicksand);
+	--font-sans: var(--font-nunito-sans);
 
 	--spacing-primary: var(--spacing-primary);
 	--spacing-secondary: var(--spacing-secondary);
 }
 
 body {
-	background: var(--primary-highlight);
+	background: var(--primary);
 	color: var(--secondary);
 	font-family: var(--font-sans);
 }
